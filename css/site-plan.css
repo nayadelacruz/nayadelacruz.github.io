@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
 
 :root {
     --primary-color: #aaf0d1;
     --secondary-color: #fbfbef;
     --accent1-color: #a9b2c3;
     --accent2-color: #708090;
-    --heading-font: @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Hind+Siliguri:wght@300&family=Noto+Sans&display=swap');
-    --paragraph-font: @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Hind+Siliguri:wght@300&family=Noto+Sans&display=swap');
+    --heading-font: Epilogue;
+    --paragraph-font: Hind;
 }
 
 html {
