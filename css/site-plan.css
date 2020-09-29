@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
 
 :root {
-    --primary-color: #aaf0d1;
-    --secondary-color: #fbfbef;
-    --accent1-color: #a9b2c3;
-    --accent2-color: #708090;
+    --primary-color: #00AFB5;
+    --secondary-color: #EFD28D;
+    --accent1-color: #A30000;
+    --accent2-color: #004777;
     --heading-font: Epilogue;
     --paragraph-font: Hind;
 }
