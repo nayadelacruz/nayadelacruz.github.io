@@ -12,7 +12,7 @@
 }
 
 html {
-    background-color: var(--primary-color)
+    background-color: var(--secondary-color)
 }
 
 body {
@@ -35,16 +35,16 @@ header {
     padding: 1em;
     text-align: center;
     color: var(--accent2-color);
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 header>h1 {
-    color: var(--accent2-color)
+    color: var(--accent2-color);
 }
 
 p {
     font-family: var(--paragraph-font);
-    color: var(--accent1-color);
+    color: var(--accent2-color);
     padding: 1em
 }
 
@@ -73,11 +73,13 @@ p {
 }
 
 .accent1 {
-    background-color: var(--accent1-color)
+    background-color: var(--accent1-color);
+    color: white;
 }
 
 .accent2 {
-    background-color: var(--accent2-color)
+    background-color: var(--accent2-color);
+    color: white;
 }
 
 nav {
@@ -99,7 +101,7 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 nav a:hover {
