@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+:root {
+    --primary-color: #E09F3E;
+    --secondary-color: #F2EFE9;
+    --accent1-color: #F6E7CB;
+    --accent2-color: #010400;
+    --heading-font: Epilogue;
+    --paragraph-font: Hind;
+}
+* {
+   background-color: var(--secondary-color); 
+}
+
+.navlink {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+main, section, .insection, .parsection {
+    background-color: var(--accent1-color);
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+ 
