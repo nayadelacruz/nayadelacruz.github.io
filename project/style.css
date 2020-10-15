@@ -15,11 +15,13 @@
 }
 
 .navlink {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--accent2-color);
+    padding: 5px 5px 0px;
+    text-decoration: none;
 }
 
-main, section, .insection, .parsection {
+main, .picturemain, section, .divhomeaway, .divwedding, .divsearch, .insection, .imagehomeaway, .homeparagraph, .weddingparagraph, .searchparagraph {
     background-color: var(--accent1-color);
 }
 
@@ -27,5 +29,75 @@ header, main, footer {
     max-width: 960px;
     margin: 0 auto;
   }
+
+  .title {
+      margin-bottom: 0px;
+      margin-left: 10px;
+      padding-bottom: 0px;
+      font-family: var(--heading-font), "Lucida Grande", sans-serif;
+      font-size: 2.5rem;
+      
+  }
   
- 
+ .mainnavlink {
+    list-style-type: none;
+     display: flex;
+     flex-direction: row;
+     font-family: var(--heading-font), "Lucida Grande", sans-serif;
+ }
+
+ .logotitle {
+     display:flex;
+     flex-direction: row;
+ }
+
+ header {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;   
+ }
+
+ h2 {
+    font-family: var(--heading-font), "Lucida Grande", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+ }
+
+p {
+    font-family: var(--paragraph-font), Geneva, sans-serif;
+    font-size: 16px;
+    
+}
+
+.homeparagraph {
+    padding-right: 20px;
+}
+
+.weddingparagraph {
+    padding-left: 20px;
+}
+
+.homeaway{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.weddingreceptions{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+
+.insection {
+    padding-top: 30px;
+}
+
+.imagehomeaway {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
