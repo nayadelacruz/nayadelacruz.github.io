@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
 
 :root {
-    --primary-color: #E09F3E;
-    --secondary-color: #F2EFE9;
-    --accent1-color: #F6E7CB;
-    --accent2-color: #010400;
+    --primary-color: #8E9DCC;
+    --secondary-color: #7D84B2;
+    --accent1-color: #FEF9FF;
+    --accent2-color: #D9DBF1;
     --heading-font: Epilogue;
     --paragraph-font: Hind;
 }
@@ -36,6 +36,7 @@ header, main, footer {
       padding-bottom: 0px;
       font-family: var(--heading-font), "Lucida Grande", sans-serif;
       font-size: 2.5rem;
+      color:  var(--accent2-color);
       
   }
   
@@ -63,6 +64,7 @@ header, main, footer {
     font-size: 1.5rem;
     text-align: center;
     text-decoration: underline;
+    color: var(--secondary-color);
  }
 
 p {
@@ -73,16 +75,22 @@ p {
 
 .homeparagraph {
     padding-right: 20px;
+    color: var(--secondary-color);
 }
 
 .weddingparagraph {
     padding-left: 20px;
+    color: var(--secondary-color);
+}
+.searchparagraph {
+    color: var(--secondary-color) 
 }
 
 .homeaway{
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: var(--secondary-color);
 }
 
 .weddingreceptions{
