@@ -17,6 +17,8 @@
 .navlink {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 5px 5px 0px;
     text-decoration: none;
 }
@@ -30,17 +32,18 @@ header, main, footer {
     margin: 0 auto;
   }
 
-  .title {
+    .title {
       margin-bottom: 0px;
       margin-left: 10px;
       padding-bottom: 0px;
       font-family: var(--heading-font), "Lucida Grande", sans-serif;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       color:  var(--accent2-color);
       
   }
   
  .mainnavlink {
+     margin-top: 3rem;
     list-style-type: none;
      display: flex;
      flex-direction: row;
@@ -50,6 +53,7 @@ header, main, footer {
  .logotitle {
      display:flex;
      flex-direction: row;
+     align-items: center;
  }
 
  header {
@@ -107,5 +111,19 @@ p {
 .imagehomeaway {
     padding-top: 30px;
     padding-bottom: 20px;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.address {
+    margin-right: 33rem;
+}
+
+.youtube, .instagram, .facebook {
+    margin-left: 8px;
 }
 
