@@ -21,6 +21,10 @@
     margin-right: 5px;
     padding: 5px 5px 0px;
     text-decoration: none;
+
+}
+.navlink:hover {
+    color: var(--primary-color)
 }
 
 main, .picturemain, section, .divhomeaway, .divwedding, .divsearch, .insection, .imagehomeaway, .homeparagraph, .weddingparagraph, .searchparagraph {
@@ -48,6 +52,7 @@ header, main, footer {
      display: flex;
      flex-direction: row;
      font-family: var(--heading-font), "Lucida Grande", sans-serif;
+     
  }
 
  .logotitle {
@@ -120,10 +125,56 @@ p {
 }
 
 .address {
-    margin-right: 33rem;
+    margin-right: 30rem;
 }
 
 .youtube, .instagram, .facebook {
     margin-left: 8px;
 }
 
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+/* Call to action */
+
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    background-color:  rgba(142, 157, 204, .9);
+    margin: 1em 3em;
+    padding: 1em;
+    text-align: center;
+}
+
+.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color: white;
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 2.3rem;
+    font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+    color: var(--accent1-color);
+    background-color:rgba(142, 157, 204, 0) ;
+}
+
+button {
+    font-family: var(--paragraph-font), Arial, Helvetica, sans-serif;
+    color: var(--accent1-color)
+    font
+}
+
+.banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.banner-box img {
+    grid-column: 1 / -1; /* the -1 is just a fancy way to say "span all the columns" */
+    grid-row: 1;
+}
