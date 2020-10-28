@@ -17,8 +17,8 @@
 .navlink {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 5px 5px 0px;
     text-decoration: none;
 
@@ -27,7 +27,7 @@
     color: var(--primary-color)
 }
 
-main, .picturemain, section, .divhomeaway, .divwedding, .divsearch, .insection, .imagehomeaway, .homeparagraph, .weddingparagraph, .searchparagraph {
+main, .picturemain, section, .divhomeaway, .divwedding, .divsearch, .insection, .imagehomeaway, .imagewedding, .homeparagraph, .weddingparagraph, .searchparagraph {
     background-color: var(--accent1-color);
 }
 
@@ -41,31 +41,32 @@ header, main, footer {
       margin-left: 10px;
       padding-bottom: 0px;
       font-family: var(--heading-font), "Lucida Grande", sans-serif;
-      font-size: 2.2rem;
+      font-size: 2rem;
       color:  var(--accent2-color);
       
   }
   
  .mainnavlink {
      margin-top: 3rem;
-    list-style-type: none;
+     list-style-type: none;
      display: flex;
      flex-direction: row;
      font-family: var(--heading-font), "Lucida Grande", sans-serif;
+     font-size: .9rem;
      
  }
 
  .logotitle {
      display:flex;
      flex-direction: row;
-     align-items: center;
+     align-items: baseline;
  }
 
  header {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     align-items: center;   
+     align-items: baseline;   
  }
 
  h2 {
@@ -118,24 +119,38 @@ p {
     padding-bottom: 20px;
 }
 
-.contactinfo {
+.contact {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
 }
 
+.social {
+    margin-right: 5rem;
+}
+
 .address {
-    margin-right: 30rem;
+    margin-left: 5rem;
+
 }
 
 .youtube, .instagram, .facebook {
     margin-left: 8px;
 }
 
-.contact {
-    display: flex;
-    flex-direction: row;
+.copy {
+    text-align: center;
 }
+
+/* Images 3D effect in the main */
+
+.imagehomeaway, .imagewedding {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;
+}
+
 /* Call to action */
 
 .action {
