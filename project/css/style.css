@@ -82,21 +82,25 @@ p {
     font-size: 16px;
     
 }
-
-.homeparagraph {
-    padding-right: 20px;
-    color: var(--secondary-color);
+/* ************ Grid for Main ************ */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 327px 300px 300px 135px 384px;
 }
 
-.weddingparagraph {
-    padding-left: 20px;
-    color: var(--secondary-color);
-}
-.searchparagraph {
-    color: var(--secondary-color) 
+.picturemain {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .homeaway{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -104,19 +108,46 @@ p {
 }
 
 .weddingreceptions{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     
 }
 
-.insection {
-    padding-top: 30px;
+.searchcenter {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
-.imagehomeaway {
-    padding-top: 30px;
-    padding-bottom: 20px;
+.calltoaction {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+/********* Main Paragraphs Style ************/
+
+.homeparagraph {
+    padding-right: 1rem;
+    padding-left: 3rem;
+    color: var(--secondary-color);
+}
+
+.weddingparagraph {
+    padding-right: 3rem;
+    padding-left: 1rem;
+    color: var(--secondary-color);
+}
+.searchparagraph {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    color: var(--secondary-color) 
 }
 
 .contact {
@@ -148,6 +179,8 @@ p {
 .imagehomeaway, .imagewedding {
     border: 1px solid #ccc;
     padding: 10px;
+    margin-left: 3rem;
+    margin-right: 3rem;
     box-shadow: 5px 5px 5px #999;
 }
 
@@ -193,3 +226,11 @@ button {
     grid-column: 1 / -1; /* the -1 is just a fancy way to say "span all the columns" */
     grid-row: 1;
 }
+
+/******* Media Quary ********/
+
+@media screen and (max-width: 550px) {
+    .______ {
+      display: block;
+    }
+  }
