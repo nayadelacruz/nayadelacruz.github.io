@@ -86,7 +86,9 @@ p {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 327px 300px 300px 135px 384px;
+    grid-template-rows: 327px 300px 300px 200px;
+    column-gap: 3rem;
+    row-gap: 3rem;
 }
 
 .picturemain {
@@ -112,6 +114,10 @@ main {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
 }
 
 .searchcenter {
@@ -144,6 +150,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 2rem;
 
 }
 
@@ -153,6 +160,7 @@ main {
 
 .address {
     margin-left: 5rem;
+    color: var(--accent1-color);
 
 }
 
@@ -162,6 +170,7 @@ main {
 
 .copy {
     text-align: center;
+    color: var(--accent1-color);
 }
 
 /* Images 3D effect in the main */
