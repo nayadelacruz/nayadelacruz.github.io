@@ -112,10 +112,6 @@ main {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    
 }
 
 .searchcenter {
@@ -125,12 +121,6 @@ main {
     grid-row-end: 5;
 }
 
-.calltoaction {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
 /********* Main Paragraphs Style ************/
 
 .homeparagraph {
