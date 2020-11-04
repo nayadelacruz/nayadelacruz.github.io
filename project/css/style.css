@@ -49,6 +49,12 @@ header, main, footer {
       white-space: nowrap;
       
   }
+
+  header {
+      display: flex;
+      flex-wrap: wrap;
+
+  }
   
   nav{
     max-width: 50%;
