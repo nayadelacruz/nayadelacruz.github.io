@@ -16,7 +16,7 @@
 
 .navlink {
     background-color: var(--secondary-color);
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     margin-left: 10px;
     margin-right: 10px;
     padding: 5px 5px 0px;
@@ -45,7 +45,7 @@ header, main, footer {
       padding-bottom: 0px;
       font-family: var(--heading-font), "Lucida Grande", sans-serif;
       font-size: 2rem;
-      color:  var(--accent2-color);
+      color:  var(--accent1-color);
       white-space: nowrap;
       
   }
