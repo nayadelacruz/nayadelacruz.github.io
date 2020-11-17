@@ -1,0 +1,133 @@
+<!DOCTYPE html>  
+<html lang= "en-us">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content= "The overall goal of the website project is to promote and provide information about the specialized services 
+        that this hotel chain offers to meet the needs of temple patrons who come to serve in the temple or who participate in events such as sealings, 
+        weddings, receptions, and youth trips.">
+        <title>Temple Inn & Suites | Your Home Away From Home | 215-529-9999</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logotitle">
+                <picture>
+                    <img src="../images/logo.png" alt="Logo of the company Temple Inn and Suites" height="100">
+                </picture>
+                <h1 class="title">Temple Inn & Suites</h1>
+            </div>
+            <nav>
+                <ul class="mainnavlink" >
+                  <li><a class="navlink" href= "index.html">Home</a></li>
+                  <li><a class="navlink" href= "amenities.html">Amenities</a></li>
+                  <li><a class="navlink" href= "spotlight.html">Temple Spotlight</a></li>
+                  <li><a class="navlink" href= "reservation.html">Reservations</a></li>   
+                </ul>        
+                </nav>
+        </header>
+        <main class="mainhome">
+            <section class="calltoaction">
+                <div class="banner-box">
+                    <img class="banner" src="images/hero-image.jpg" alt="Temple of Fort Lauderdale Florida" >
+                    <div class="action">
+                        <h3>
+                           RESERVE NOW!
+                        </h3>
+                        <h4 class="title-hfour">Please complete <br> the form below</h4>
+                        
+                        <button>Contact Us</button>
+                    </div>
+                </div>
+            </section>     
+            <section class="form">
+                <form action="my-templesuits-form-page" method="post">
+                    <h2 class="titleform">Contact Information</h2>
+                    <ul class="ulform">
+                        <li class="liform">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="user_name" placeholder="User Name">
+                        </li>
+                        <li class="liform">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="user_phone" placeholder="###-###-####">
+                        </li>
+                        <li class="liform">
+                            <label for="email">eMail</label>
+                            <input type="email" id="email" name="user_email" placeholder="user@email.org">
+                        </li>
+                    </ul>
+                    <h2 class="titleform">Reservation Date</h2>
+                    <ul class="ulform">
+                        <li class="liform">
+                            <label for="initial_date">Arrival - Date/Time</label>
+                            <input type="date" id="initial_date" name="arrival">
+                        </li>
+                        <li class="liform">
+                            <label for="final_date">Departure - Date/Time</label>
+                            <input type="date" id="final_date" name="departure">
+                        </li>
+                    </ul>
+                    <h2 class="titleform">Accommodations</h2>
+                    <ul class="ulform">
+                        <li class="liform">
+                            <label for="adults">Number of Adults:</label>
+                            <input type="number" id="adults" name="adults_number">
+                        </li>
+                        <li class="liform">
+                            <label for="kids">Number of Kids:</label>
+                            <input type="number" id="kids" name="kids_number">
+                        </li>
+                        <li class="liform">
+                            <label for="beds">Number of Beds Needed:</label>
+                            <input type="number" id="beds" name="beds_number">
+                        </li>
+                        <li class="liform">
+                            <label for="msg">Any Special Request?:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                          </li>
+                        <li class="button">
+                              <button class="formbutton" type="submit">Make Reservation</button>
+                        </li>
+                    </ul>
+                </form>
+                <div id="feedback"></div>
+                <script>
+        // get the feedback div element so we can do something with it.
+                const feedbackElement = document.getElementById('feedback');
+        // get the form element so we can read what was entered in it.
+                const formElement = document.forms[0];
+        
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                formElement.addEventListener('submit', function(e) {
+          // stop the form from doing the default action
+                  e.preventDefault();
+          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                  feedbackElement.innerHTML = 'Your reservation is booked. You will receive a confirmation email';
+          // make the feedback element visible.
+                  feedbackElement.style.display = "block";
+        });
+      </script>
+            </section>
+            
+        </main>
+        <footer>
+            <div class="contact">
+                <p class="address"><strong>Temple Inn & Suites Headquarters<br>
+                355 Wisconsin Avenue<br>
+                Bethesda, MD 20814<br>
+                215-829-9999<br>
+                info@templinn.com</strong></p>
+                <div class="social">
+                    <a href="http://facebook.com" class="facebook"><img src="images/facebookicon.png" alt="Facebook logo" height="50"></a>
+                    <a href="http://instagram.com" class="instagram"><img src="images/instagramicon.png" alt="Instagram logo" height="50"></a>
+                    <a href="http://youtube.com" class="youtube"><img src="images/youtubeicon.png" alt="Youtube logo" height="50"></a>
+                </div></div>
+                
+            <p class="copy"><strong>Copyright &copy; 2020 Temple Inn & Suites | All rights Reserved | Privacy and Cookie Statement | Nayade De la cruz </strong></p>
+
+        </footer>
+
+
+    </body>
+</html>

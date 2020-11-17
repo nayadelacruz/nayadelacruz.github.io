@@ -14,6 +14,7 @@
    background-color: var(--secondary-color); 
 }
 
+
 .navlink {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
@@ -29,7 +30,7 @@
     color: var(--primary-color)
 }
 
-main, .picturemain, section, .divhomeaway, .divwedding, .divsearch, .insection, .imagehomeaway, .imagewedding, .homeparagraph, .weddingparagraph, .searchparagraph {
+main, .calltoaction, .banner, .banner-box, section, .divhomeaway, .divwedding, .divsearch, .insection, .imagehomeaway, .imagewedding, .homeparagraph, .weddingparagraph, .searchparagraph {
     background-color: var(--accent1-color);
 }
 
@@ -98,16 +99,17 @@ p {
     font-size: 16px;
     
 }
-/* ************ Grid for Main ************ */
-main {
+/* ************ Grid for Main HOME ************ */
+.mainhome {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 327px 300px 300px 200px;
     column-gap: 3rem;
     row-gap: 3rem;
+    
 }
 
-.picturemain {
+.calltoaction {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -148,18 +150,18 @@ main {
 .homeparagraph {
     padding-right: 1rem;
     padding-left: 3rem;
-    color: var(--secondary-color);
+    color: black;
 }
 
 .weddingparagraph {
     padding-right: 3rem;
     padding-left: 1rem;
-    color: var(--secondary-color);
+    color: black;
 }
 .searchparagraph {
     padding-right: 3rem;
     padding-left: 3rem;
-    color: var(--secondary-color); 
+    color: black;
 }
 
 .contact {
@@ -226,6 +228,12 @@ h3 {
     white-space: nowrap;
 }
 
+.title-hfour {
+    font-size: 1.3rem;
+    font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+    background-color:  rgba(142, 157, 204, .9);
+    color: var(--accent1-color);
+}
 button {
     font-family: var(--paragraph-font), Arial, Helvetica, sans-serif;
     color: var(--secondary-color);
@@ -254,3 +262,362 @@ button {
     }
 }
 
+/******* Amenities CSS ******/
+
+.freeamenities {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    padding: 2rem;
+    background-color: var(--accent1-color);
+    text-align: left;
+    font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+}
+
+.breakfast, .parking, .parking, .workout, .shuttle, .pool, .familyhistory, .wifi {
+    background-color: var(--accent1-color);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.titlebreakfast, .titleparking, .titleworkout, .titleshuttle, .titlepool, .titlefamilyhistory, .titlewifi {
+    background-color: var(--accent1-color);
+
+}
+
+.imagebreakfast, .imageparking, .imageworkout, .imageshuttle, .imagepool, .imagefamilyhistory, .imagewifi {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    box-shadow: 5px 5px 5px #999;
+    background-color: var(--accent1-color);
+}
+
+.pbreakfast, .pparking, .pworkout, .pshuttle, .ppool, .pfamilyhistory, .pwifi {
+    background-color: var(--accent1-color);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.divbreakfast, .divparking, .divworkout, .divshuttle, .divpool, .divfamilyhistory, .divwifi {
+    background-color: var(--accent1-color);
+}
+
+
+/******** GRID AMENIITES ********/
+
+.mainamenities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 450px 450px 450px 450px;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.secfree {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.breakfast {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.parking {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.workout {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.shuttle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.pool {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.familyhistory {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.wifi {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/******* Media Quary ********/
+
+@media screen and (max-width: 550px) {
+    .secfree, .breakfast, .parking, .workout, .shuttle, .pool, .familyhistory, .wifi {
+      display: block;
+    }
+}
+
+/******* Spotlight CSS ******/
+
+.spotlight {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    padding: 2rem;
+    background-color: var(--accent1-color);
+    text-align: left;
+    font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+}
+
+.services, .templehistory, .schedule {
+    background-color: var(--accent1-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.divgalery{
+    background-color: var(--accent1-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.galery-three {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--accent1-color);
+}
+
+.titleservices, .titletemplehistory, .titlegalery, .titleschedule {
+    background-color: var(--accent1-color);
+}
+
+.pschedule {
+    background-color: var(--accent1-color);
+    padding: 0 2rem 0rem 2rem;
+    font-family: var(--paragraph-font);
+    color: black;
+}
+
+.ptemplehistory {
+    background-color: var(--accent1-color);
+    font-family: var(--paragraph-font);
+    color: black;
+}
+
+.servicesul, .servicesli {
+    background-color: var(--accent1-color);
+    font-family: var(--paragraph-font);
+    color: black;
+}
+
+  .imagegalery {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    box-shadow: 5px 5px 5px #999;
+    background-color: var(--accent1-color);
+}
+
+/******** Grid SPOTLIGHT ************/
+
+.mainspotlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 200px 250px 350px;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.secspotlight {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.schedule {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.services {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.templehistory {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.galery {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+
+/*****  Call to Action Spotlight *********/
+
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    background-color:  rgba(142, 157, 204, .9);
+    margin: 4rem 5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.3rem;
+    font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+    color: var(--accent1-color);
+    background-color:rgba(142, 157, 204, 0) ;
+    white-space: nowrap;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.banner-box img {
+    grid-column: 1 / -1; /* the -1 is just a fancy way to say "span all the columns" */
+    grid-row: 1;
+}
+/******* Media Quary ********/
+
+@media screen and (max-width: 550px) {
+    .secspotlight, .services, .templehistory, .galery, .schedule {
+      display: block;
+    }
+}
+
+/******* Reservation CSS *********/
+
+form {
+    background-color: var(--accent1-color);
+    /* center the form */
+    margin: 0 auto;
+    width: 550px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    
+}
+
+.titleform {
+    background-color: var(--accent1-color);
+}
+
+.ulform {
+    background-color: var(--accent1-color);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.liform {
+    background-color: var(--accent1-color);
+    margin-top: 1em;
+}
+
+input, textarea {
+    background-color: var(--accent1-color);
+    /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+label {
+    background-color: var(--accent1-color);
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+input:focus, 
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+      /* Provide space to type some text */
+    height: 5em;
+    padding: .5rem;
+}
+
+.button {
+    padding-left: 200px;
+    margin-top: 2rem;
+    background-color: var(--accent1-color);
+
+}
+
+.formbutton {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#feedback { 
+    display: none; /* we will make the element invisible until the form is submitted successfully */
+    text-align: center;
+    padding-top: 2rem;
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    font-size: 1.5rem;
+   }
