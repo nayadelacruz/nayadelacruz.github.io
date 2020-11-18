@@ -257,7 +257,7 @@ button {
 /******* Media Quary ********/
 
 @media screen and (max-width: 550px) {
-    .calltoaction, .homeaway, .weddingreceptions {
+    .calltoaction, .homeaway, .weddingreceptions, .searchcenter {
       display: block;
     }
 }
@@ -625,3 +625,11 @@ textarea {
     background-color: var(--accent1-color);
     font-size: 1.5rem;
    }
+
+   /******* Media Quary ********/
+
+@media screen and (max-width: 550px) {
+    .calltoaction, form {
+      display: block;
+    }
+}
