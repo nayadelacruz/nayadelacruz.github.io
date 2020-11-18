@@ -103,7 +103,7 @@ p {
 .mainhome {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 327px 300px 300px 200px;
+    grid-template-rows: 327px 300px 300px 220px;
     column-gap: 3rem;
     row-gap: 3rem;
     
