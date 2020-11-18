@@ -271,6 +271,7 @@ button {
     background-color: var(--accent1-color);
     text-align: left;
     font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 .breakfast, .parking, .parking, .workout, .shuttle, .pool, .familyhistory, .wifi {
@@ -282,7 +283,10 @@ button {
 
 .titlebreakfast, .titleparking, .titleworkout, .titleshuttle, .titlepool, .titlefamilyhistory, .titlewifi {
     background-color: var(--accent1-color);
-
+    color: var(--secondary-color);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
 }
 
 .imagebreakfast, .imageparking, .imageworkout, .imageshuttle, .imagepool, .imagefamilyhistory, .imagewifi {
