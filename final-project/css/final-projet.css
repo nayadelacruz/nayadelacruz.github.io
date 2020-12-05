@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+:root {
+    --primary-color: #0FA6F8;
+    --secondary-color: #A8DDFA;
+    --accent1-color: #FEF9FF;
+    --accent2-color:#7ED957;
+    --title-font: 'Fredoka One', cursive;
+    --paragraph-font: 'Lato', sans-serif;
+    --heading-font: 'Merriweather Sans', sans-serif;
+}
+* {
+   background-color: var(--accent1-color);
+   font-size: 17px;
+}
+
+header, main, footer {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+ /******* Header *******/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+h1 {
+    font-family: var(--title-font);
+    color: var(--primary-color);
+    font-size: 4rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
+img {
+    height: 10rem;
+}
+
+.logotitle{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end ;
+}
+
+.mainnav{
+   list-style-type: none;
+   display: flex; 
+   flex-direction: row;
+}
+
+.navlink a {
+   font-family: var(--heading-font);
+   font-size: .9rem;
+   color: var(--primary-color);
+   margin-left: .4rem;
+   margin-right: .4rem;
+   padding: 5px 5px 0px;
+   text-decoration: none;
+   font-weight: bolder;
+   white-space: nowrap;
+}
+
+.navlink a:hover{
+    color: var(--accent2-color);
+}
+
+/******** MAIN *********/
+
+main, section, h3, .mainp{
+    background-color:#cef0c1;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    color:var(--primary-color);
+    margin: 0px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+p{
+    font-size: 1rem;
+    font-family: var(--paragraph-font);
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 20px 10px 20px;
+}
+
+.heroimage {
+    width: 100%;
+    max-width: 960px;
+}
+
+.titleaccount {
+    background-color: var(--accent1-color);
+    text-align: center;
+
+}
+
+.imgtestimony {
+    padding: 20px;
+    background-color:#cef0c1 ;
+}
+/******** Form *******/
+form {
+    background-color: var(--accent1-color);
+ /* center the form */
+    margin: 0 auto;
+    width: 550px;
+ /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    text-align: center;
+}
+
+label, legend, button{
+    font-family: var(--heading-font);
+}
+
+input, textarea {
+    width: 300px;
+    box-sizing: 300px;
+    border: 1px solid #999;
+    height: 1rem;
+    padding: .5rem;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+.labelradio{
+    text-align: left;
+}
+
+.inputradio{
+    width: 2rem;
+}
+
+button {
+    width: 546px;
+    height: 50px;
+    margin: auto;
+    background-color: var(--primary-color);
+    
+    
+}
+
+input:focus, 
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+.formaccount div {
+    padding: 5px;
+}
+
+
+/********* Home Grid **********/
+.home {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 20rem 15rem 15rem 20rem 20rem;
+    align-content: center;
+    align-items: center;
+    background-color: #cef0c1;
+}
+
+.banner {
+    grid-column:1/5;
+    grid-row: 1/2;
+    background-color: #cef0c1;
+}
+
+.about {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: #cef0c1;
+}
+
+.whyus {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-color: #cef0c1;
+}
+
+.formhome {
+    grid-column: 1/5;
+    grid-row: 4/6;
+    background-color: #cef0c1;
+}
+
+.testimonial {
+    grid-column: 4/5;
+    grid-row: 2/4;
+    background-color: #cef0c1;
+}
+
+/************************** Banner ***/
+
+.welcome {
+    font-size: 2.5rem;
+    color: var(--accent1-color);
+    background-color: rgba(126, 217, 87, .3);
+    font-family: var(--heading-font);
+    margin: 0px;
+    padding: 1rem;
+
+}
+
+.heroimage {
+    margin: 0px;
+    padding: 0px;
+}
+
+/******* Footer **********/
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    margin: 0;
+    padding: 5px 15px 5px 15px;
+    max-height: 80px;
+}
+
+.iconfacebook {
+    margin: 0;
+    padding: 5px 15px 5px 15px;
+    max-height: 70px;
+}
+
+/********** CSS Find a Babysitter site *******/
+
+/****** FORM *******/
+.babysitter fieldset {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.babysitter fieldset label {
+    width: auto;
+}
+
+.babysitter div label {
+    text-align: right;
+}
+
+.babysitter div{
+    padding: 5px;
+}
+
+.babysitter {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    margin-top: 3rem;
+
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+      /* Provide space to type some text */
+    height: 5em;
+    padding: .5rem;
+}

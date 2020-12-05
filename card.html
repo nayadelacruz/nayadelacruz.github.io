@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 100%;
+            }
+        .card {
+            width: 320px;
+            box-shadow: 1px 1px 4px 1px #888;
+            border-radius: 3px;
+            background-color: white; 
+            overflow: hidden;
+        }    
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+            color: #888;
+        }
+
+        .viewButton{
+            padding: 5px 5px 5px 5px;
+            margin: 5px 0px 20px 15px;
+            border-width: 1px .2px 1px 1px;
+            border-radius: 3px 0px 0px 3px;
+            border-color: #ccc;
+            color: #ccc;
+            background-color: white;
+            border-style: solid;
+        }
+        
+        .editButton{
+            padding: 5px 6px 5px 6px;
+            margin: 5px 5px 20px 0px;
+            border-width: 1px 1px 1px .2px;
+            border-radius: 0px 3px 3px 0px;
+            border-color: #ccc;
+            color:#ccc;
+            background-color: white;
+            border-style:solid;
+        }
+
+        span p{
+            color: #ccc;
+            font-family: Arial, Helvetica, sans-serif;
+            margin:5px;
+            padding: 5px 15px 20px 5px;
+            font-size: .9rem;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+
+        }
+
+    </style>
+</head>
+<body>
+    <article class="card">
+        <img src="https://picsum.photos/320/240" alt="filling image">
+        <p>This is a wider card with supporting text below as a naturallead-in to additional content. This content is a little bit longer.</p>
+        <footer>
+            <div>
+                <button class="viewButton" type="button">View</button><!-- --><button class="editButton" type="button">Edit</button>
+            </div>
+                <span>
+                    <p>9 mins</p>
+                </span>
+        </footer>
+    </article>
+    
+</body>
+</html>

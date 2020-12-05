@@ -1,0 +1,141 @@
+<!DOCTYPE html>  
+<html lang= "en-us">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content= "The goal of the website is to help parents to find 
+        a trustful babysitter and help people find a side job as babysitters">
+        <title>Baby Yoda 123 | Because we care | 215-529-9999</title>
+        <link rel="stylesheet" href="css/final-projet.css">
+    </head>
+    <body>
+        <header>
+            <div class="logotitle">
+                <picture>
+                    <img src="images/baby_yoda.png" alt="Logo of the company Baby Yoda 123" height="100">
+                </picture>
+                <h1>BABY YODA</h1>
+            </div>
+            <nav>
+                <ul class="mainnav">
+                    <li class="navlink"><a href="index.html">HOME</a></li>
+                    <li class="navlink"><a href="babysitter.html">FIND A BABYSITTER</a></li>
+                    <li class="navlink"><a href="moreinfo.html">INFO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <form class="babysitter" method="post" action="babyyodaform">
+                    <h3>Find a Babysitter</h3>
+                    <fieldset>
+                        <legend>Period of Time <em>(Choose one)</em></legend>
+                        <div class= "radio">
+                            <input class="inputradio" type="radio" id="onetime" name="one-time" value="one_time" checked> 
+                            <label class="labelradio" for="onetime">One Time</label>
+                        </div>
+                        <div>
+                            <input class="inputradio" type="radio" id="regular" name="constant" value="constant" checked> 
+                            <label class="labelradio" for="regular">Regular <em> (more than one time per week) </em></label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Schedule <em>(Choose one)</em></legend>
+                        <div class= "radio">
+                            <input class="inputradio" type="radio" id="mornig" name="am" value="morning" checked> 
+                            <label class="labelradio" for="morning">Morning (6 a.m. - 12 p.m.)</label>
+                        </div>
+                        <div>
+                            <input class="inputradio" type="radio" id="afternoon" name="noon" value="afternoon" checked> 
+                            <label class="labelradio" for="afternoon">Afternoon (12 p.m. - 6 p.m.)</label>
+                        </div>
+                        <div>
+                            <input class="inputradio" type="radio" id="night" name="night" value="night" checked> 
+                            <label class="labelradio" for="night">Night (6 p.m. - 6 a.m.)</label>
+                        </div>
+                        <div>
+                            <input class="inputradio" type="radio" id="full-time" name="full-time" value="full-time" checked> 
+                            <label class="labelradio" for="afternoon">Full Time (More than 6 hrs)</label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label>Number of Kids:</label>
+                            <select name="kids" id="numberofkids" onchange="selectResponse()">
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                                <option value="morethan">More than 8</option>
+                            </select></div>
+                    <div>       
+                        <label>Ages Range of the Kids:</label>
+                            <select name="range" id="rangeage" onchange="selectResponse()">
+                                <option value="baby">less than 1 year</option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                                <option value="morethan">More than 8</option>
+                            </select>
+                            <select name="range" id="rangeage" onchange="selectResponse()">
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                                <option value="morethan">More than 8</option>
+                            </select></label>
+                        </div>
+                        <div>
+                            <label>Allergies:</label>
+                                <select name="allergies" id="allergie" onchange="selectResponse()">
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                        </div>
+                        <div>        
+                            <label for="">Specify:</label>
+                            <textarea id="specific" name="specify-allergies"></textarea>    
+                        </div> 
+                    <div>
+                        <label for="msg">Have Kids with Special Needs? Specify:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                    </div>          
+                    <div>
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" placeholder="#####-####"></label>
+                    </div>
+                
+                    <button type="submit">Filter Babysitter</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Baby Yoda 123 Headquarters<br>
+                75 S 4 W<br>
+                Rexburg, ID 83440<br>
+                208-829-9999<br>
+                info@babyoda123.com</strong></p>
+            </p>
+            <div>
+                <a href="https://www.facebook.com" class="facebook"><img class="iconfacebook" src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://www.instagram.com" class="instagram"><img class="icon" src="images/instagram.png" alt="Instagram logo"></a>
+                <a href="https://www.youtube.com/" class="youtube"><img class="icon" src="images/youtube.png" alt="Youtube logo"></a>
+            </div>
+
+        </footer>
+
+    </body>
+    </html>

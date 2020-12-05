@@ -1,0 +1,116 @@
+<!DOCTYPE html>  
+<html lang= "en-us">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content= "The goal of the website is to help parents to find 
+        a trustful babysitter and help people find a side job as babysitters">
+        <title>Baby Yoda 123 | Because we care | 215-529-9999</title>
+        <link rel="stylesheet" href="css/final-projet.css">
+    </head>
+    <body>
+        <header>
+            <div class="logotitle">
+                <picture>
+                    <img src="images/baby_yoda.png" alt="Logo of the company Baby Yoda 123" height="100">
+                </picture>
+                <h1>BABY YODA</h1>
+            </div>
+            <nav>
+                <ul class="mainnav">
+                    <li class="navlink"><a href="index.html">HOME</a></li>
+                    <li class="navlink"><a href="babysitter.html">FIND A BABYSITTER</a></li>
+                    <li class="navlink"><a href="moreinfo.html">INFO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="home">
+            <section class="banner">
+                <h2 class="welcome">WELCOME!</h2>
+                <img class="heroimage" src="images/heroimage.jpg" width="960">
+            </section>
+            <section class="about">
+                <h3>About Us</h3>
+                <p class="mainp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nemo vel laudantium, 
+                    quos illo nihil labore itaque exercitationem culpa sequi veniam facere obcaecati officia magni eos,
+                     ab, fugit minima cupiditate placeat totam quis maiores accusamus accusantium. Facilis atque assumenda 
+                     dolorem error eaque tempore, laudantium aliquam dolores veritatis! Obcaecati, deleniti ea accusamus 
+                    </p>
+            </section>   
+            <section class="whyus">
+                <h3>Why us?</h3>
+                <p class="mainp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, ex a? Quam accusamus vero quidem doloribus
+                     quos. Dolorem illo distinctio molestiae beatae et facere, a deserunt consequuntur laboriosam dolor! Corporis, 
+                     natus quos? Dignissimos reprehenderit ipsam, alias nam praesentium,
+                </p>
+            </section>
+            <section class="formhome">
+                <form method="post" action="babyyodaform" class=formaccount>
+                    <h3 class="titleaccount">Create an Account</h3>
+                    <fieldset>
+                        <legend>Type of Account <em>(Choose one)</em></legend>
+                        <div class= "radio">
+                            <input class="inputradio" type="radio" id="type1" name="account" value="parent" checked> 
+                            <label class="labelradio" for="type1">Parent</label>
+                        </div>
+                        <div>
+                            <input class="inputradio" type="radio" id="type2" name="account" value="babysitter" checked> 
+                            <label class="labelradio" for="type2">Babysitter</label>
+                        </div>
+                        <div>
+                            <input class="inputradio" type="radio" id="type3" name="account" value="both">
+                            <label class="labelradio" for="type3">Both</label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="user_name" placeholder="User Name">
+                    </div>
+                    <div>
+                        <label for="email">eMail:</label>
+                        <input type="email" id="email" name="user_email" placeholder="user@email.org">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="user_phone" placeholder="###-###-####">
+                    </div>
+                    <div>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="user_address" placeholder="Address">
+                    </div>
+                    <div>
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" placeholder="#####-####"></label>
+                    </div>
+                    <div>
+                        <label for="date">Date of Birth:</label>
+                        <input type="date" id="birthdate">
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+            </section>
+            <section class="testimonial">
+                <img class="imgtestimony" src="http://placekitten.com/50/50">
+                <p class="mainp">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Asperiores sapiente at recusandae nihil unde, dignissimos
+                     laudantium commodi? Ipsam, voluptatibus voluptas!</p>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Baby Yoda 123 Headquarters<br>
+                75 S 4 W<br>
+                Rexburg, ID 83440<br>
+                208-829-9999<br>
+                info@babyoda123.com</strong></p>
+            </p>
+            <div>
+                <a href="https://www.facebook.com" class="facebook"><img class="iconfacebook" src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://www.instagram.com" class="instagram"><img class="icon" src="images/instagram.png" alt="Instagram logo"></a>
+                <a href="https://www.youtube.com/" class="youtube"><img class="icon" src="images/youtube.png" alt="Youtube logo"></a>
+            </div>
+
+        </footer>
+
+    </body>
+    </html>
