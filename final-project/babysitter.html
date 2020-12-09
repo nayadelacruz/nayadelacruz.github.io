@@ -45,7 +45,7 @@
                     <fieldset>
                         <legend>Schedule <em>(Choose one)</em></legend>
                         <div class= "radio">
-                            <input class="inputradio" type="radio" id="mornig" name="am" value="morning" checked> 
+                            <input class="inputradio" type="radio" id="morning" name="am" value="morning" checked> 
                             <label class="labelradio" for="morning">Morning (6 a.m. - 12 p.m.)</label>
                         </div>
                         <div>
@@ -88,7 +88,7 @@
                                 <option value="eight">8</option>
                                 <option value="morethan">More than 8</option>
                             </select>
-                            <select name="range" id="rangeage" onchange="selectResponse()">
+                            <select name="range" id="rangeagetwo" onchange="selectResponse()">
                                 <option value="one">1</option>
                                 <option value="two">2</option>
                                 <option value="three">3</option>
@@ -98,7 +98,7 @@
                                 <option value="seven">7</option>
                                 <option value="eight">8</option>
                                 <option value="morethan">More than 8</option>
-                            </select></label>
+                            </select>
                         </div>
                         <div>
                             <label>Allergies:</label>
@@ -108,7 +108,7 @@
                                 </select>
                         </div>
                         <div>        
-                            <label for="">Specify:</label>
+                            <label for="specific">Specify:</label>
                             <textarea id="specific" name="specify-allergies"></textarea>    
                         </div> 
                     <div>
@@ -117,7 +117,7 @@
                     </div>          
                     <div>
                         <label for="zip">Zip Code:</label>
-                        <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" placeholder="#####-####"></label>
+                        <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="postal-code" placeholder="#####-####">
                     </div>
                 
                     <button type="submit">Filter Babysitter</button>
@@ -130,8 +130,7 @@
                 75 S 4 W<br>
                 Rexburg, ID 83440<br>
                 208-829-9999<br>
-                info@babyoda123.com</strong></p>
-            </p>
+                info@babyoda123.com</p>
             <div>
                 <a href="https://www.facebook.com" class="facebook"><img class="iconfacebook" src="images/facebook.png" alt="Facebook logo"></a>
                 <a href="https://www.instagram.com" class="instagram"><img class="icon" src="images/instagram.png" alt="Instagram logo"></a>
