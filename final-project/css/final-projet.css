@@ -25,8 +25,8 @@ header, main, footer {
  /******* Header *******/
 header{
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
 }
 h1 {
@@ -59,7 +59,7 @@ img {
    color: var(--primary-color);
    margin-left: .4rem;
    margin-right: .4rem;
-   padding: 5px 5px 0px;
+   padding: 5px 3px 0px;
    text-decoration: none;
    font-weight: bolder;
    white-space: nowrap;
@@ -96,6 +96,7 @@ p{
 .heroimage {
     width: 100%;
     max-width: 960px;
+    height: 100%;
 }
 
 .titleaccount {
@@ -171,7 +172,7 @@ textarea:focus {
 .home {
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 20rem 15rem 15rem 20rem 20rem;
+    grid-template-rows: 380PX 15rem 15rem 20rem 20rem;
     align-content: center;
     align-items: center;
     background-color: #cef0c1;
@@ -207,22 +208,6 @@ textarea:focus {
     background-color: #cef0c1;
 }
 
-/************************** Banner ***/
-
-.welcome {
-    font-size: 2.5rem;
-    color: var(--accent1-color);
-    background-color: rgba(126, 217, 87, .3);
-    font-family: var(--heading-font);
-    margin: 0px;
-    padding: 1rem;
-
-}
-
-.heroimage {
-    margin: 0px;
-    padding: 0px;
-}
 
 /******* Footer **********/
 footer {
@@ -242,6 +227,15 @@ footer {
     max-height: 70px;
 }
 
+.finalsite{
+    font-family: var(--paragraph-font);
+    color: black;
+    text-decoration: none;
+}
+
+.finalsite a:hover {
+    color: var(--accent2-color);
+}
 /********** CSS Find a Babysitter site *******/
 
 /****** FORM *******/
@@ -276,4 +270,158 @@ textarea {
       /* Provide space to type some text */
     height: 5em;
     padding: .5rem;
+}
+
+.babysitter{
+    display: grid;
+    grid-area: auto;
+}
+
+.titlebabysitter {
+    font-family: var(--title-font);
+    background-color: var(--accent1-color);
+}
+
+.headerform {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.babysitter {
+    margin-top: 0px;
+}
+
+/******** REVIEWS *********/
+
+/*** Card ***/
+.imgcard {
+    width: 100%
+}
+.card{
+    width: 290px;
+    height: 340px;
+    box-shadow: 1px 1px 4px 1px var(--accent1-color);
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    margin: auto;
+}
+
+.pcard {
+    font-family: var(--paragraph-font);
+    color: black;
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.more {
+    width: 100px;
+    height:30px;
+    padding: 5px;
+    margin: 10px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--primary-color);
+    color: black;
+    background-color:white;
+    border-style: solid;
+    font-size: 10px;
+}
+
+.footcard {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+span{
+    background-color: var(--secondary-color); 
+}
+
+.divreviewbutton {
+    background-color: var(--secondary-color);
+}
+
+.star{
+    background-color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+.titlereviews{
+    font-size: 2.5rem;
+    font-family: var(--title-font);
+    color: var(--primary-color);
+    background-color: #cef0c1;
+    margin: 0px;
+}
+/***Grid***/
+
+.reviews {
+    display: grid;
+    grid-template-rows: 8rem 26rem 20rem;
+    grid-template-columns: 320px 320px 320px;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlereviews {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    text-align: center;
+    margin:15px;
+    
+}
+
+.one {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.two {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.three {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.leavereview {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.commenttitle {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    margin: 0px
+}
+
+.commenttextarea {
+    width: 400px;
+    height: 150px;
+    margin: 19px;
+    border-color: var(--primary-color);
+
+}
+
+.buttonreview {
+    width: 419px;
+    height:30px;
+    padding: 5px;
+    margin: 0px 0px 0px 18px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--primary-color);
+    color: black;
+    background-color:white;
+    border-style: solid;
+    font-size: 10px;
 }
