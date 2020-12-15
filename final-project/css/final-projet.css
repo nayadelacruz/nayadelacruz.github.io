@@ -415,9 +415,8 @@ span{
 .titlereviews{
     font-size: 2.5rem;
     font-family: var(--title-font);
-    color: var(--primary-color);
-    background-color: var(--accent1-color);
     margin: 0px;
+    -webkit-text-stroke: 2px var(--primary-color);
 }
 /***Grid***/
 
@@ -488,4 +487,9 @@ span{
     background-color: var(--accent2-color);
     border-style: solid;
     font-size: 10px;
+}
+
+.labelreview{
+    -webkit-text-stroke: 1px var(--primary-color);
+    -webkit-text-fill-color: white;
 }

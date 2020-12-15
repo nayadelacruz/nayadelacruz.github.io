@@ -58,11 +58,11 @@
                         </div>
                         <div>
                             <input class="inputradio" type="radio" id="full-time" name="hour" value="full-time" checked> 
-                            <label class="labelradio" for="afternoon">Full Time (More than 6 hrs)</label>
+                            <label class="labelradio" for="full-time">Full Time (More than 6 hrs)</label>
                         </div>
                     </fieldset>
                     <div>
-                        <label>Number of Kids:</label>
+                        <label for="numberofkids">Number of Kids:</label>
                             <select name="kids" id="numberofkids" onchange="selectResponse()">
                                 <option value="one">1</option>
                                 <option value="two">2</option>
@@ -75,7 +75,7 @@
                                 <option value="morethan">More than 8</option>
                             </select></div>
                     <div>       
-                        <label>Ages Range of the Kids:</label>
+                        <label for="rangeage">Ages Range of the Kids From:</label>
                             <select name="range" id="rangeage" onchange="selectResponse()">
                                 <option value="baby">less than 1 year</option>
                                 <option value="one">1</option>
@@ -87,8 +87,10 @@
                                 <option value="seven">7</option>
                                 <option value="eight">8</option>
                                 <option value="morethan">More than 8</option>
-                            </select>
-                            <select name="range" id="rangeagetwo" onchange="selectResponse()">
+                            </select></div>
+                    <div>
+                        <label for="rangeage1">To:</label>  
+                            <select name="range" id="rangeage1" onchange="selectResponse()">
                                 <option value="one">1</option>
                                 <option value="two">2</option>
                                 <option value="three">3</option>
@@ -101,7 +103,7 @@
                             </select>
                         </div>
                         <div>
-                            <label>Allergies:</label>
+                            <label for="allergie">Allergies:</label>
                                 <select name="allergies" id="allergie" onchange="selectResponse()">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
