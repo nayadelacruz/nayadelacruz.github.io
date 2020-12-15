@@ -8,9 +8,9 @@
     --accent1-color: #FEF9FF;
     --accent2-color:#d8fcc9;
     --accent3-color: #A8DDFA;
-    --title-font: 'Fredoka One', cursive;
-    --paragraph-font: 'Poppins', sans-serif;
-    --heading-font: 'Merriweather Sans', sans-serif;
+    --title-font: 'Fredoka One', cursive, "Lucida Grande", sans-serif;
+    --paragraph-font: 'Poppins', sans-serif, "Lucida Grande", sans-serif;
+    --heading-font: 'Merriweather Sans', sans-serif, "Lucida Grande";
 }
 * {
    background-color: var(--accent1-color);
