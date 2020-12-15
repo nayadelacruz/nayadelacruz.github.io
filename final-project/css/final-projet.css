@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 :root {
-    --primary-color: #0FA6F8;
-    --secondary-color: #A8DDFA;
+    --primary-color: #03a0f5;
+    --secondary-color: #E8FFE0;
     --accent1-color: #FEF9FF;
-    --accent2-color:#7ED957;
+    --accent2-color:#d8fcc9;
+    --accent3-color: #A8DDFA;
     --title-font: 'Fredoka One', cursive;
-    --paragraph-font: 'Lato', sans-serif;
+    --paragraph-font: 'Poppins', sans-serif;
     --heading-font: 'Merriweather Sans', sans-serif;
 }
 * {
@@ -16,7 +17,7 @@
    font-size: 17px;
 }
 
-header, main, footer {
+main {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
@@ -25,60 +26,83 @@ header, main, footer {
  /******* Header *******/
 header{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
+    background-color: var(--accent3-color);
 }
 h1 {
     font-family: var(--title-font);
-    color: var(--primary-color);
+    -webkit-text-stroke: 1px var(--primary-color);
+    -webkit-text-fill-color: white;
     font-size: 4rem;
     margin: 0;
     white-space: nowrap;
+    background-color: var(--accent3-color);
 }
 
 img {
     height: 10rem;
 }
 
+.baby{
+    background-color: var(--accent3-color);
+    margin-left: 20px
+}
+
 .logotitle{
     display: flex;
     flex-direction: row;
     align-items: flex-end ;
+    background-color: var(--accent3-color);
+}
+
+nav{
+    margin-right: 20px;
 }
 
 .mainnav{
    list-style-type: none;
    display: flex; 
    flex-direction: row;
+   background-color: var(--accent3-color);
 }
 
 .navlink a {
    font-family: var(--heading-font);
    font-size: .9rem;
-   color: var(--primary-color);
+   -webkit-text-stroke: 1px var(--primary-color);
+    -webkit-text-fill-color: white;
    margin-left: .4rem;
    margin-right: .4rem;
    padding: 5px 3px 0px;
    text-decoration: none;
    font-weight: bolder;
    white-space: nowrap;
+   background-color: var(--accent3-color);
 }
 
 .navlink a:hover{
-    color: var(--accent2-color);
+    background-color: white;
+    border-radius: 4px;
+    
 }
 
+nav, li.navlink {
+    background-color: var(--accent3-color);
+}
 /******** MAIN *********/
 
 main, section, h3, .mainp{
-    background-color:#cef0c1;
+    background-color: var(--accent1-color);
 }
 
-h3 {
+h2, .titleaccount {
     font-size: 2rem;
     font-family: var(--heading-font);
-    color:var(--primary-color);
+    -webkit-text-stroke: 1px var(--primary-color);
+    -webkit-text-fill-color: white;
     margin: 0px;
     padding: 10px;
     padding-left: 20px;
@@ -107,7 +131,10 @@ p{
 
 .imgtestimony {
     padding: 20px;
-    background-color:#cef0c1 ;
+    background-color: var(--secondary-color);
+    border: 1px;
+    border-color: white;
+    border-radius: 6px;
 }
 /******** Form *******/
 form {
@@ -117,7 +144,7 @@ form {
     width: 550px;
  /* Form outline */
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 4px solid var(--primary-color);
     border-radius: 1em;
     text-align: center;
 }
@@ -128,8 +155,7 @@ label, legend, button{
 
 input, textarea {
     width: 300px;
-    box-sizing: 300px;
-    border: 1px solid #999;
+    border: 1px solid var(--primary-color);
     height: 1rem;
     padding: .5rem;
 }
@@ -152,7 +178,10 @@ button {
     width: 546px;
     height: 50px;
     margin: auto;
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
+    border: 2px solid;
+    border-color: var(--primary-color);
+    border-radius: 4px;
     
     
 }
@@ -167,6 +196,13 @@ textarea:focus {
     padding: 5px;
 }
 
+fieldset {
+    border-color: var(--primary-color);
+}
+
+select{
+    border-color: var(--primary-color);
+}
 
 /********* Home Grid **********/
 .home {
@@ -175,66 +211,92 @@ textarea:focus {
     grid-template-rows: 380PX 15rem 15rem 20rem 20rem;
     align-content: center;
     align-items: center;
-    background-color: #cef0c1;
+    background-color: var(--accent1-color);
 }
 
 .banner {
     grid-column:1/5;
     grid-row: 1/2;
-    background-color: #cef0c1;
+    background-color: var(--accent1-color);
 }
 
 .about {
     grid-column: 1/4;
     grid-row: 2/3;
-    background-color: #cef0c1;
+    background-color: var(--accent1-color);
 }
 
 .whyus {
     grid-column: 1/4;
     grid-row: 3/4;
-    background-color: #cef0c1;
+    background-color: var(--accent1-color);
 }
 
 .formhome {
     grid-column: 1/5;
     grid-row: 4/6;
-    background-color: #cef0c1;
+    background-color: var(--accent1-color);
 }
 
 .testimonial {
     grid-column: 4/5;
     grid-row: 2/4;
-    background-color: #cef0c1;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.testimonialp, .testimonialp em {
+    background-color: var(--secondary-color);
+}
+
+em{
+    background-color: var(--secondary-color);
 }
 
 
 /******* Footer **********/
-footer {
+footer{
+    background-color: var(--accent3-color);
     display: flex;
     justify-content: space-between;
 }
 
 .icon {
     margin: 0;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 5px 5px 5px;
     max-height: 80px;
+    background-color: var(--accent3-color);
 }
 
 .iconfacebook {
     margin: 0;
-    padding: 5px 15px 5px 15px;
-    max-height: 70px;
+    padding: 5px 5px 5px 5px;
+    max-height: 80px;
+    background-color: var(--accent3-color);
 }
 
 .finalsite{
     font-family: var(--paragraph-font);
     color: black;
     text-decoration: none;
+    background-color: var(--accent3-color);
 }
 
-.finalsite a:hover {
-    color: var(--accent2-color);
+.finalsite:hover {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.siteplan {
+    margin-right: 20px;
+}
+
+.address {
+    margin-left: 20px;
+}
+
+.address, .siteplan, .socialmedia, .facebook, .instagram, .youtube {
+    background-color: var(--accent3-color);
 }
 /********** CSS Find a Babysitter site *******/
 
@@ -300,10 +362,10 @@ textarea {
 }
 .card{
     width: 290px;
-    height: 340px;
+    height: 380px;
     box-shadow: 1px 1px 4px 1px var(--accent1-color);
     border-radius: 4px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent3-color);
     overflow: hidden;
     margin: auto;
 }
@@ -312,7 +374,7 @@ textarea {
     font-family: var(--paragraph-font);
     color: black;
     padding: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent3-color);
 }
 
 .more {
@@ -330,23 +392,23 @@ textarea {
 }
 
 .footcard {
-    background-color: var(--secondary-color);
+    background-color: var(--accent3-color);
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: var(--secondary-color);
+    align-content: flex-end;
 }
 
 span{
-    background-color: var(--secondary-color); 
+    background-color: var(--accent3-color); 
 }
 
 .divreviewbutton {
-    background-color: var(--secondary-color);
+    background-color: var(--accent3-color);
 }
 
 .star{
-    background-color: var(--secondary-color);
+    background-color: var(--accent3-color);
     margin-right: 10px;
 }
 
@@ -354,7 +416,7 @@ span{
     font-size: 2.5rem;
     font-family: var(--title-font);
     color: var(--primary-color);
-    background-color: #cef0c1;
+    background-color: var(--accent1-color);
     margin: 0px;
 }
 /***Grid***/
@@ -401,7 +463,9 @@ span{
 .commenttitle {
     font-family: var(--heading-font);
     font-size: 1.5rem;
-    margin: 0px
+    margin: 0px;
+    -webkit-text-stroke: 1px var(--primary-color);
+    -webkit-text-fill-color: white;
 }
 
 .commenttextarea {
@@ -421,7 +485,7 @@ span{
     border-radius: 3px;
     border-color: var(--primary-color);
     color: black;
-    background-color:white;
+    background-color: var(--accent2-color);
     border-style: solid;
     font-size: 10px;
 }

@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 :root {
-    --primary-color: #042698;
-    --secondary-color: #057EE6;
+    --primary-color: #03a0f5;
+    --secondary-color: #E8FFE0;
     --accent1-color: #FEF9FF;
-    --accent2-color: #060404;
+    --accent2-color: #d8fcc9;
+    --accent3-color: #A8DDFA;
     --title-font: 'Fredoka One', cursive;
     --paragraph-font: 'Lato', sans-serif;
     --heading-font: 'Merriweather Sans', sans-serif;
@@ -30,13 +30,39 @@ img {
 
 h1 {
     font-family: var(--title-font);
-    color: var(--accent1-color);
+    -webkit-text-stroke: 1px var(--primary-color);
+    -webkit-text-fill-color: white;
+    font-size: 4rem;
+    margin: 0;
+    white-space: nowrap;
+    
 
 }
 
-h2, h3, h4, h5, h6 {
+h2{
+    font-size: 2rem;
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    -webkit-text-stroke: 1px var(--primary-color);
+    -webkit-text-fill-color: white;
+} 
+
+h3{
+    font-size: 1.3rem;
+    font-family: var(--heading-font);
+    -webkit-text-stroke: 1px var(--primary-color);
+    -webkit-text-fill-color: white;
+    text-decoration: underline;
+}
+ h4{
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    -webkit-text-stroke: 1px var(--primary-color);
+    -webkit-text-fill-color: white;
+ }
+     
+h5, h6 {
+    font-family: var(--heading-font);
+    color: black;
     font-weight: bold;
 }
 
@@ -48,18 +74,17 @@ header {
 }
 
 header>h1 {
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 p {
     font-family: var(--paragraph-font);
-    color: var(--accent2-color);
+    color: black;
     padding: 1em
 }
 
 .colors {
-    width: 100%;
-    min-width: 350px;
+    width: 600px;
     margin: auto;
     text-align: center
 }
@@ -69,30 +94,37 @@ p {
 }
 
 .colors td {
-    width: 25%;
+    width: 20%;
     height: 3em
 }
 
 .primary {
     background-color: var(--primary-color);
-    color: white;
+    color: black;
 }
 
 .secondary {
-    background-color: var(--secondary-color)
+    background-color: var(--secondary-color);
+    color: black;
 }
 
 .accent1 {
     background-color: var(--accent1-color);
+    color: black;
 }
 
 .accent2 {
     background-color: var(--accent2-color);
-    color: white;
+    color: black;
+}
+
+.accent3 {
+    background-color: var(--accent3-color);
+    color: black;
 }
 
 nav {
-    background-color: var(--secondary-color);
+    background-color: var(--accent3-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em;
@@ -110,10 +142,34 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: .9rem;
+    -webkit-text-stroke: 1px var(--primary-color);
+     -webkit-text-fill-color: white;
+    margin-left: .4rem;
+    margin-right: .4rem;
+    padding: 5px 3px 0px;
+    text-decoration: none;
+    font-weight: bolder;
+    white-space: nowrap;
+    background-color: var(--accent3-color);
 }
 
 nav a:hover {
-    color: var(--accent1-color);
-    background-color: var(--secondary-color)
+    background-color: white;
+    border-radius: 4px;
+}
+
+.signature {
+    color: var(--primary-color);
+}
+
+.colored {
+    background-color: var(--accent1-color);
+    font-size: 1rem;
+    font-family: var(--paragraph-font);
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 20px 10px 20px;
 }
